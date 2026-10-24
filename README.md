@@ -1,6 +1,6 @@
 # Discovery Protocol
 
-**Turn a thin product idea into a designed, clickable HTML prototype, with the unknowns made visible and the questions kept to five.**
+**Turn a thin product idea into a clickable HTML prototype ready for stakeholder and user validation**
 
 A [Claude Code](https://claude.com/claude-code) plugin that runs design-centered product discovery as a small agent team: framing → discovery → concepts → prototype → (optional) validation, with a short human checkpoint between each stage.
 
@@ -23,7 +23,7 @@ This is the successor to **[design-centered-workflow](https://github.com/zaebolt
 | **Validation** | Stakeholder alignment summary + test scenarios | A kit for real sessions; no simulated stakeholder reactions |
 | **Memory** | `DESIGN_PROCESS.md` per run | A running retro; lessons carry across runs, each with an expiry condition |
 
-What those runs taught, in short:
+What previous versions taught, in short:
 - **Generated research reads as fact.** Personas and PRDs written from a one-line idea look authoritative, so the team anchors on guesses. Now every claim shows where it came from.
 - **Asking beats inventing, but only up to a point.** Unlimited elicitation turned into endless questions. Now there are at most 5 per checkpoint, each with a default you can accept by replying "ok".
 - **More must-haves make a worse prototype.** Proving every requirement on screen produced dense admin panels. Must-haves are capped, and requirement text is kept out of the UI.
@@ -120,11 +120,10 @@ Hooks enforce a few rules; the agents use judgment for everything else. The hook
 
 You can adjust these in `STATE.dp3.md`: `Question cap: 5`, `Must cap: 12`, and `Surface allow: A100` (for a real product term the surface check would otherwise block).
 
-## Tips
+## Keep in mind
 
-- **It uses a lot of tokens.** A full run is a multi-agent session. To save tokens, skip validation, and accept defaults instead of answering every question.
-- **The first checkpoint matters most.** Most expensive corrections in past runs came from things framing could have caught: what "match" or "done" means exactly, which product this lives in, whether an answer implies saved or shared state, and how much data there really is. Real counts and hierarchy depth at framing keep the prototype from being designed around a toy dataset.
-- **Share early.** `framing-v1.md` is written so you can forward it to your PM unedited.
+- **It uses a lot of tokens.** A full run is a multi-agent session.
+- **The first checkpoint matters most.** Most expensive corrections in past runs came from things framing could have caught.
 
 ## Repository layout
 
