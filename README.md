@@ -102,7 +102,7 @@ your-project/
     └── briefs/      brief-pm-<date>.md
 ```
 
-Open the prototype with `open artifacts/prototype/site/index.html`. Every journey step has its own URL (`#/compare`, `#/compare?state=empty`), so you can link to any screen.
+Open the prototype with `open artifacts/prototype/site/index.html`.
 
 ## Guardrails
 
