@@ -1,0 +1,70 @@
+/* sketch.css — the ONLY stylesheet a concept sketch may use.
+   Greyscale wireframe on purpose: a sketch is a thinking tool, not a design.
+   Its look must be impossible to mistake for (or lift into) the prototype.
+   Copied into artifacts/concepts/sketches/ by scaffold.sh. Link it as ../sketch.css. */
+
+:root {
+  --ink: #2b2b2b;
+  --mid: #8a8a8a;
+  --line: #b9b9b9;
+  --fill: #efefef;
+  --paper: #fafafa;
+  --mark: #ffe9a8; /* the one allowed highlight: "look here" */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.45 "Comic Neue", "Chalkboard SE", "Segoe Print", ui-rounded, system-ui, sans-serif;
+}
+
+h1, h2, h3 { font-weight: 700; margin: 0 0 8px; }
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+
+a { color: var(--ink); }
+
+.sketch-banner {
+  font-size: 12px; color: var(--mid); border-bottom: 1px dashed var(--line);
+  padding-bottom: 8px; margin-bottom: 16px;
+}
+
+.box   { border: 1.5px solid var(--ink); border-radius: 6px; padding: 12px; background: #fff; }
+.zone  { border: 1.5px dashed var(--line); border-radius: 6px; padding: 12px; }
+.fill  { background: var(--fill); }
+.row   { display: flex; gap: 12px; align-items: flex-start; }
+.col   { display: flex; flex-direction: column; gap: 12px; }
+.grow  { flex: 1; }
+.muted { color: var(--mid); }
+.mark  { background: var(--mark); }
+
+.btn {
+  display: inline-block; border: 1.5px solid var(--ink); border-radius: 4px;
+  padding: 4px 10px; background: #fff; cursor: pointer; font: inherit;
+}
+.btn.primary { background: var(--ink); color: #fff; }
+
+.placeholder {
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), var(--line), transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - 1px), var(--line), transparent calc(50% + 1px));
+  border: 1.5px solid var(--line); min-height: 80px;
+}
+
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; }
+th { background: var(--fill); }
+
+.note {
+  border-left: 3px solid var(--mid); padding: 4px 10px; color: var(--mid);
+  font-size: 12px; margin: 8px 0;
+}
+
+.steps { display: flex; gap: 8px; margin-bottom: 16px; font-size: 12px; }
+.steps a { padding: 2px 8px; border: 1px dashed var(--line); border-radius: 10px; text-decoration: none; }
+.steps a.on { border-style: solid; border-color: var(--ink); }

@@ -1,0 +1,8 @@
+.DS_Store
+
+# Run output, in case someone starts a run inside the repo checkout
+STATE.dp3.md
+RETRO.md
+RETRO-draft.md
+artifacts/
+.dp3/
