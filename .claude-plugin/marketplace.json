@@ -12,7 +12,7 @@
       "name": "discovery-protocol-v3",
       "source": "./",
       "description": "Thin idea → framing → one discovery doc → sketched concepts → a designed, clickable HTML prototype. Questions capped at five, each with a default.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": {
         "name": "Yoana Georgieva"
       }

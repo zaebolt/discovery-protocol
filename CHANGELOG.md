@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 — 2026-10-24
+
+- **Plugin icon:** `.claude-plugin/icon.png` (1024 px): a dashed wireframe behind a designed browser window, for a rough idea becoming a designed prototype.
+
 ## 0.2.1 — 2026-10-24
 
 Fixes from the first full v3 run's retro.
