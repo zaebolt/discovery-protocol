@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 530" width="1680" height="530" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1680" height="530" rx="20" fill="#FAFBFC"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5F6E7A"/></marker></defs>
+<rect x="40" y="40" width="200" height="330" rx="16" fill="#FFFFFF" stroke="#D6DEE5" stroke-width="1.5"/>
+<text x="58" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#3E6B8A">START</text>
+<text x="58" y="98" font-size="22" font-weight="700" fill="#1B2733">Kickoff</text>
+<text x="58" y="130" font-size="14" fill="#1B2733" opacity=".82">You give the problem in</text>
+<text x="58" y="150" font-size="14" fill="#1B2733" opacity=".82">a line, any raw input</text>
+<text x="58" y="170" font-size="14" fill="#1B2733" opacity=".82">(ticket, notes, thread)</text>
+<text x="58" y="190" font-size="14" fill="#1B2733" opacity=".82">and a design reference.</text>
+<rect x="58" y="240" width="56.8" height="24" rx="12" fill="#EEF2F5"/><text x="86.4" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">lead</text>
+<text x="58" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">STATE.dp3.md</text>
+<path d="M40 322 H240 V354 a16 16 0 0 1 -16 16 H56 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="63" cy="346" r="5" fill="#3E6B8A"/><text x="76" y="351" font-size="13.5" font-weight="700" fill="#1B2733">You answer 3 asks</text>
+<line x1="246" y1="175.0" x2="292" y2="175.0" stroke="#5F6E7A" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="298" y="40" width="222" height="330" rx="16" fill="#FFFFFF" stroke="#D6DEE5" stroke-width="1.5"/>
+<text x="316" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#3E6B8A">STAGE 1</text>
+<text x="316" y="98" font-size="22" font-weight="700" fill="#1B2733">Framing</text>
+<text x="316" y="130" font-size="14" fill="#1B2733" opacity=".82">Restates the problem.</text>
+<text x="316" y="150" font-size="14" fill="#1B2733" opacity=".82">Asks ≤5 questions, each</text>
+<text x="316" y="170" font-size="14" fill="#1B2733" opacity=".82">with a default. Pins down</text>
+<text x="316" y="190" font-size="14" fill="#1B2733" opacity=".82">meaning, host product,</text>
+<text x="316" y="210" font-size="14" fill="#1B2733" opacity=".82">state and data scale.</text>
+<rect x="316" y="240" width="100.0" height="24" rx="12" fill="#EEF2F5"/><text x="366.0" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">researcher</text>
+<text x="316" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">framing-v1.md</text>
+<path d="M298 322 H520 V354 a16 16 0 0 1 -16 16 H314 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="321" cy="346" r="5" fill="#3E6B8A"/><text x="334" y="351" font-size="13.5" font-weight="700" fill="#1B2733">C0 · Approve framing</text>
+<line x1="526" y1="175.0" x2="572" y2="175.0" stroke="#5F6E7A" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="578" y="40" width="222" height="330" rx="16" fill="#FFFFFF" stroke="#D6DEE5" stroke-width="1.5"/>
+<text x="596" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#3E6B8A">STAGE 2</text>
+<text x="596" y="98" font-size="22" font-weight="700" fill="#1B2733">Discovery</text>
+<text x="596" y="130" font-size="14" fill="#1B2733" opacity=".82">One doc: personas,</text>
+<text x="596" y="150" font-size="14" fill="#1B2733" opacity=".82">stakeholders, landscape,</text>
+<text x="596" y="170" font-size="14" fill="#1B2733" opacity=".82">scale &amp; shape, needs,</text>
+<text x="596" y="190" font-size="14" fill="#1B2733" opacity=".82">≤12 must-haves.</text>
+<text x="596" y="210" font-size="14" fill="#1B2733" opacity=".82">Critic reviews it.</text>
+<rect x="596" y="240" width="100.0" height="24" rx="12" fill="#EEF2F5"/><text x="646.0" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">researcher</text>
+<rect x="702.0" y="240" width="71.2" height="24" rx="12" fill="#EEF2F5"/><text x="737.6" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">critic</text>
+<text x="596" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">discovery-v1.md</text>
+<path d="M578 322 H800 V354 a16 16 0 0 1 -16 16 H594 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="601" cy="346" r="5" fill="#3E6B8A"/><text x="614" y="351" font-size="13.5" font-weight="700" fill="#1B2733">C1 · Approve discovery</text>
+<line x1="806" y1="175.0" x2="852" y2="175.0" stroke="#5F6E7A" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="858" y="40" width="222" height="330" rx="16" fill="#FFFFFF" stroke="#D6DEE5" stroke-width="1.5"/>
+<text x="876" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#3E6B8A">STAGE 3</text>
+<text x="876" y="98" font-size="22" font-weight="700" fill="#1B2733">Concepts</text>
+<text x="876" y="130" font-size="14" fill="#1B2733" opacity=".82">3–4 divergent concepts.</text>
+<text x="876" y="150" font-size="14" fill="#1B2733" opacity=".82">Critic ranks them blind,</text>
+<text x="876" y="170" font-size="14" fill="#1B2733" opacity=".82">names a kill and a bet.</text>
+<text x="876" y="190" font-size="14" fill="#1B2733" opacity=".82">Top 2 get grey</text>
+<text x="876" y="210" font-size="14" fill="#1B2733" opacity=".82">clickable wireframes.</text>
+<rect x="876" y="240" width="85.6" height="24" rx="12" fill="#EEF2F5"/><text x="918.8" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">explorer</text>
+<rect x="967.6" y="240" width="71.2" height="24" rx="12" fill="#EEF2F5"/><text x="1003.2" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">critic</text>
+<text x="876" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">concepts-v1.md</text>
+<text x="876" y="308" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">sketches/</text>
+<path d="M858 322 H1080 V354 a16 16 0 0 1 -16 16 H874 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="881" cy="346" r="5" fill="#3E6B8A"/><text x="894" y="351" font-size="13.5" font-weight="700" fill="#1B2733">C2 · You pick one</text>
+<line x1="1086" y1="175.0" x2="1132" y2="175.0" stroke="#5F6E7A" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1138" y="40" width="222" height="330" rx="16" fill="#FFFFFF" stroke="#D6DEE5" stroke-width="1.5"/>
+<text x="1156" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#3E6B8A">STAGE 4</text>
+<text x="1156" y="98" font-size="22" font-weight="700" fill="#1B2733">Prototype</text>
+<text x="1156" y="130" font-size="14" fill="#1B2733" opacity=".82">Design direction, then a</text>
+<text x="1156" y="150" font-size="14" fill="#1B2733" opacity=".82">static HTML prototype.</text>
+<text x="1156" y="170" font-size="14" fill="#1B2733" opacity=".82">Critic reviews it from</text>
+<text x="1156" y="190" font-size="14" fill="#1B2733" opacity=".82">screenshots, up to 2</text>
+<text x="1156" y="210" font-size="14" fill="#1B2733" opacity=".82">fix rounds.</text>
+<rect x="1156" y="240" width="100.0" height="24" rx="12" fill="#EEF2F5"/><text x="1206.0" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">prototyper</text>
+<rect x="1262.0" y="240" width="71.2" height="24" rx="12" fill="#EEF2F5"/><text x="1297.6" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">critic</text>
+<text x="1156" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">site/index.html</text>
+<path d="M1138 322 H1360 V354 a16 16 0 0 1 -16 16 H1154 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="1161" cy="346" r="5" fill="#3E6B8A"/><text x="1174" y="351" font-size="13.5" font-weight="700" fill="#1B2733">C3 · You react</text>
+<line x1="1366" y1="175.0" x2="1412" y2="175.0" stroke="#5F6E7A" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1418" y="40" width="222" height="330" rx="16" fill="#FFFFFF" stroke="#5F6E7A" stroke-width="1.5" stroke-dasharray="8 6"/>
+<text x="1436" y="70" font-size="11" font-weight="700" letter-spacing="1.4" fill="#5F6E7A">OPTIONAL</text>
+<text x="1436" y="98" font-size="22" font-weight="700" fill="#1B2733">Validation</text>
+<text x="1436" y="130" font-size="14" fill="#1B2733" opacity=".82">A kit for real sessions</text>
+<text x="1436" y="150" font-size="14" fill="#1B2733" opacity=".82">with PMs, engineers</text>
+<text x="1436" y="170" font-size="14" fill="#1B2733" opacity=".82">and users. No simulated</text>
+<text x="1436" y="190" font-size="14" fill="#1B2733" opacity=".82">reactions.</text>
+<rect x="1436" y="240" width="92.8" height="24" rx="12" fill="#EEF2F5"/><text x="1482.4" y="256.5" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1B2733">validator</text>
+<text x="1436" y="290" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#5F6E7A">validation-kit-v1.md</text>
+<path d="M1418 322 H1640 V354 a16 16 0 0 1 -16 16 H1434 a16 16 0 0 1 -16 -16 Z" fill="#E2EBF2"/>
+<circle cx="1441" cy="346" r="5" fill="#3E6B8A"/><text x="1454" y="351" font-size="13.5" font-weight="700" fill="#1B2733">C4 · Close and retro</text>
+<rect x="40" y="394" width="1600" height="54" rx="14" fill="#1B2733"/>
+<text x="62" y="427" font-size="15" fill="#F2F5F7"><tspan font-weight="700">Lead (orchestrator)</tspan><tspan fill="#F2F5F7" fill-opacity=".68">  runs the flow, briefs each agent, keeps the question budget, and is the only one who talks to you.</tspan></text>
+<circle cx="48" cy="479" r="5" fill="#3E6B8A"/><text x="62" y="484" font-size="13.5" fill="#1B2733"><tspan font-weight="700">Checkpoint:</tspan> Approve, Revise or End. Reply “ok” to accept every default. A hook blocks the next stage until you approve.</text>
+</svg>

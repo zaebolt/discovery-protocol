@@ -68,12 +68,7 @@ From there, each checkpoint is short: what happened, the one thing to look at, a
 
 ## How a run flows
 
-```
- kickoff ─▶ FRAMING ─▶ DISCOVERY ─▶ CONCEPTS ─────────────▶ PROTOTYPE ─────────────────▶ [VALIDATION]
-            restate +   one doc +   3–4 concepts, blind      design direction → HTML →    kit for real
-            ≤5 Qs       critic      ranking, 2 wireframes    screenshot review (≤2 rounds) sessions
-              C0          C1            C2: you pick               C3: you react              C4
-```
+![How a run flows: kickoff, then framing (C0), discovery (C1), concepts (C2: you pick one), prototype (C3: you react) and optional validation (C4). The Lead runs the flow and is the only agent that talks to you.](docs/run-flow.png)
 
 | Agent | Does |
 |---|---|
@@ -126,13 +121,14 @@ You can adjust these in `STATE.dp3.md`: `Question cap: 5`, `Must cap: 12`, and `
 ## Repository layout
 
 ```
-.claude-plugin/   plugin.json · marketplace.json
+.claude-plugin/   plugin.json · marketplace.json · icon.png
 agents/           orchestrator, researcher, explorer, critic, prototyper, validator
 skills/           start, brief, retro, artifact-templates, discovery-review,
                   concept-scoring, design-review, prototype-craft
 hooks/hooks.json  SessionStart · PreToolUse · PostToolUse
 scripts/          lib.sh, gate.sh, post-write-check.sh, load-state.sh, scaffold.sh, shoot.sh
 templates/        sketch.css (wireframe style), seed-lessons.md
+docs/             run-flow.png (README diagram) · run-flow.svg (source)
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for local development and [CHANGELOG.md](CHANGELOG.md) for release notes.
