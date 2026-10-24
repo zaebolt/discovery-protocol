@@ -40,4 +40,5 @@ jq -n --arg p "$PWD/artifacts/discovery/framing-v1.md" '{tool_input:{file_path:$
 1. Bump `version` in **both** `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`.
 2. Add an entry to `CHANGELOG.md`.
 3. Run `claude plugin validate .`.
-4. Users update with `/plugin marketplace update discovery-protocol` and then update the plugin.
+4. Commit, then tag the release: `git tag -a v<version> -m "v<version>" && git push --follow-tags`.
+5. Users update with `/plugin marketplace update discovery-protocol` and then update the plugin.

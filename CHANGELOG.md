@@ -22,7 +22,7 @@ Restores research depth to the single discovery doc. In 0.1.0, consolidating dis
 
 ## 0.1.0 — 2026-10-23
 
-First public version. It's the successor to [design-centered-workflow](https://github.com/zaebolt/design-centered-workflow) and to several unpublished intermediate versions.
+First release. It's the successor to [design-centered-workflow](https://github.com/zaebolt/design-centered-workflow) and to several unpublished intermediate versions.
 
 - **Stages:** framing → one discovery doc → concepts + wireframe sketches of the top 2 → design-directed static HTML prototype → optional validation kit.
 - **Question budget:** at most 5 questions per checkpoint, written as a guess with a default and naming what the answer would change. Other questions go to an uncapped *Later questions* list. Hook-enforced.

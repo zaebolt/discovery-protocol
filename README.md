@@ -15,7 +15,7 @@ This is the successor to **[design-centered-workflow](https://github.com/zaebolt
 | **Packaging** | Prompt files in a cloned repo | Installable plugin: agents, skills, hooks |
 | **Roles** | One conversation plays each role in turn | Separate agents; the critic reviews in its own context |
 | **Starting point** | Generates a full PRD, personas, journeys and stakeholder map from the idea | A framing checkpoint first: restates the problem and asks at most 5 questions, each with a default |
-| **Discovery output** | PRD, personas, journeys, JTBD, needs, stakeholders, landscape (several docs) | The same coverage (personas with pain points, JTBD and current journey; stakeholders; sourced competitive landscape; needs; requirements) in **one document**, with every claim tagged *stated*, *retrieved*, *inferred* or *default* |
+| **Discovery output** | PRD, personas, journeys, JTBD, needs, stakeholders, landscape (several docs) | The same coverage (personas with pain points, JTBD and current journey; stakeholders; sourced competitive landscape; data scale and shape; needs; requirements) in **one document**, with every claim tagged *stated*, *retrieved*, *inferred* or *default* |
 | **Picking a concept** | Iterate until ≥3 concepts score ≥7.5 | Critic scores blind, force-ranks, and names a kill and a bet; the top 2 get clickable wireframe sketches |
 | **Prototype** | Next.js + Tailwind app (`npm install && npm run dev`) | Static HTML that opens from disk, built from a design direction and your design system or host product |
 | **Prototype review** | You review the running app | Critic screenshots every screen and reviews it against a design rubric (up to 2 fix rounds) before you see it |
@@ -39,13 +39,17 @@ What those runs taught, in short:
 
 Then run `/reload-plugins` or start a new session. From a terminal, the equivalent is `claude plugin marketplace add zaebolt/discovery-protocol && claude plugin install discovery-protocol-v3@discovery-protocol`.
 
+If the repository is private, you need read access to it, and git must be able to authenticate to GitHub (for example after `gh auth login`, or with an SSH key).
+
+To update later: `/plugin marketplace update discovery-protocol`, then update the plugin from `/plugin`. See [CHANGELOG.md](CHANGELOG.md) for what changed.
+
 **Recommended companion:** `/plugin install frontend-design@claude-plugins-official`. The prototyper uses it for visual direction when it's available.
 
 ### Requirements
 
 - Claude Code
 - `bash`, `jq`, `perl` (macOS ships bash and perl; `brew install jq`)
-- Google Chrome, Chromium or Edge, used for screenshots in the design review. Set `CHROME=/path/to/binary` if it isn't in a standard location.
+- Google Chrome, Chromium or Edge, used for screenshots in the design review. Set `CHROME=/path/to/binary` if it isn't in a standard location. Each screen gets a viewport shot and a full-page shot. Set `DP3_SHOT_FULL=0` to skip the full-page ones, or `DP3_SHOT_SIZE=1280,800` to change the window size.
 
 Tested on macOS. Linux should work. Windows is untested.
 
@@ -119,7 +123,7 @@ You can adjust these in `STATE.dp3.md`: `Question cap: 5`, `Must cap: 12`, and `
 ## Tips
 
 - **It uses a lot of tokens.** A full run is a multi-agent session. To save tokens, skip validation, and accept defaults instead of answering every question.
-- **The first checkpoint matters most.** Most expensive corrections in past runs came from things framing could have caught: what "match" or "done" means exactly, which product this lives in, and whether an answer implies saved or shared state.
+- **The first checkpoint matters most.** Most expensive corrections in past runs came from things framing could have caught: what "match" or "done" means exactly, which product this lives in, whether an answer implies saved or shared state, and how much data there really is. Real counts and hierarchy depth at framing keep the prototype from being designed around a toy dataset.
 - **Share early.** `framing-v1.md` is written so you can forward it to your PM unedited.
 
 ## Repository layout

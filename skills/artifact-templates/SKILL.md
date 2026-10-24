@@ -72,7 +72,7 @@ Naming today's tools and UI is fine here. This is how things work now, not a pro
 
 **Scale & shape**: how much there is and how it's structured. The prototype's mock data is built to these numbers.
 ```
-- <thing>: typical <n>, range <min–max> (A-ID)        e.g. foundations per comparison: typical 5, up to 10
+- <thing>: typical <n>, range <min–max> (A-ID)        e.g. environments per comparison: typical 5, up to 10
 - Hierarchy: <level> › <level> › <level>; ~<n> per level   e.g. tile › 7–9 categories › sections › ~10 settings
 - Extremes worth designing for: <the largest / deepest / most varied case>
 - Change rate: <how often it changes, if it matters>

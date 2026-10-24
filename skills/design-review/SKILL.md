@@ -34,6 +34,6 @@ For each must marked `shown` or `partial` in the notes, go to its route and reco
 
 ## 4. Write `artifacts/prototype/design-review-vN.md`
 
-Include: screens reviewed, the score table, the journey walk, must visibility, and **at most 5 top fixes, ordered by impact**. Each fix names the screen, what's wrong, and the concrete change ("Move the foundation picker into a compact header bar; the comparison grid should start above the fold"). Taste words alone ("make it cleaner") are not a fix.
+Include: screens reviewed, the score table, the journey walk, must visibility, and **at most 5 top fixes, ordered by impact**. Each fix names the screen, what's wrong, and the concrete change ("Move the environment picker into a compact header bar; the comparison grid should start above the fold"). Taste words alone ("make it cleaner") are not a fix.
 
 End with a verdict: `ready` (show the user) or `one more round` (the fixes are worth another pass). The Lead allows at most 2 rounds.
