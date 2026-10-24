@@ -39,8 +39,6 @@ What previous versions taught, in short:
 
 Then run `/reload-plugins` or start a new session. From a terminal, the equivalent is `claude plugin marketplace add zaebolt/discovery-protocol && claude plugin install discovery-protocol-v3@discovery-protocol`.
 
-If the repository is private, you need read access to it, and git must be able to authenticate to GitHub (for example after `gh auth login`, or with an SSH key).
-
 To update later: `/plugin marketplace update discovery-protocol`, then update the plugin from `/plugin`. See [CHANGELOG.md](CHANGELOG.md) for what changed.
 
 **Recommended companion:** `/plugin install frontend-design@claude-plugins-official`. The prototyper uses it for visual direction when it's available.
