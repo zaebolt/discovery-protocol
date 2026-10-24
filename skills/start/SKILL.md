@@ -4,7 +4,7 @@ description: Start or resume a discovery-protocol-v3 run — thin input to a des
 
 # Start a discovery-protocol-v3 run
 
-Take the **Lead** role. The `orchestrator` agent definition is the authoritative spec for how you route, brief, run checkpoints, and keep the question budget. If it isn't loaded, read `agents/orchestrator.md` under the plugin root. This skill covers only the entry sequence.
+Take the **Lead** role. The `orchestrator` agent definition is the authoritative spec for how you route, brief, run checkpoints, and keep the question budget. If it isn't loaded, read `${CLAUDE_PLUGIN_ROOT}/agents/orchestrator.md`. This skill covers only the entry sequence.
 
 Problem statement (if provided): "$ARGUMENTS".
 

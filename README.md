@@ -92,9 +92,9 @@ your-project/
 ├── RETRO-draft.md                lessons captured during the run
 └── artifacts/
     ├── discovery/   framing-v1.md · discovery-v1.md (personas, stakeholders, landscape,
-    │                needs, requirements) · discovery-review-v1.md
+    │                scale, needs, requirements) · discovery-review-v1.md
     ├── concepts/    concepts-v1.md · concept-scores-v1.md · sketches/<concept>/index.html
-    ├── prototype/   design-direction-v1.md · site/index.html · screens/*.png
+    ├── prototype/   design-direction-v1.md · site/index.html · screens/ (viewport + full-page)
     │                design-review-v1.md · prototype-notes-v1.md
     ├── validation/  validation-kit-v1.md
     └── briefs/      brief-pm-<date>.md
@@ -110,7 +110,7 @@ Hooks enforce a few rules; the agents use judgment for everything else. The hook
 |---|---|
 | Stages happen in order; a later stage needs your recorded approval of the one before | Before any write into `artifacts/` |
 | At most 5 questions per checkpoint, each with *If unanswered* and *Changes* | After writing the framing or discovery doc |
-| At most 12 must-have requirements; personas (with pain points), stakeholders and competitive landscape all present | After writing the discovery doc |
+| At most 12 must-have requirements; personas (with pain points), stakeholders, competitive landscape and scale & shape all present | After writing the discovery doc |
 | Every must-have has a coverage row naming the screen (`#route`) where it lives | After writing the prototype notes |
 | No requirement IDs, `[must]`, "PRD" or other protocol words in the prototype's visible text | After writing any prototype HTML/JS |
 

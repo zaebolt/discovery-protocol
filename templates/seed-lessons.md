@@ -7,10 +7,11 @@ session of an active run, and only the first 80 lines load.
 1. **Framing pays for itself — keep it small.** Checkpoint 0 surfaced the load-bearing facts
    (scope, equality semantics, N-way vs pairwise) before any expensive work, in every run.
    Retire when: never; resize only.
-2. **Ask three things at framing:** what "match/same/done" means exactly (don't default to a
-   softer version), what product surface this lives in (host product), and whether a likely
-   answer implies persistent or shared state. Each one, discovered late, cost a revision cycle.
-   Retire when: two runs in a row surface all three at framing without being told.
+2. **Check four things at framing:** what "match/same/done" means exactly (don't default to a
+   softer version), what product surface this lives in (host product), whether a likely
+   answer implies persistent or shared state, and how much data there is and how deep it goes.
+   Each one, discovered late, cost a revision cycle.
+   Retire when: two runs in a row surface all four at framing without being told.
 3. **Guess-with-default questions get answered in one line — keep each guess atomic.** A guess
    that bundles two claims gets a bundled "yes" that hides which half was confirmed.
    Retire when: never.

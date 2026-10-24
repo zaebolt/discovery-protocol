@@ -26,7 +26,7 @@ The prototype is the deliverable. Before this version, its only design input was
 
 - **Sketches are thinking tools.** They are greyscale wireframes of a concept's primary journey, built with the plugin's `sketch.css`, and used to choose between concepts. **Never give a sketch to the prototyper as input.** Pass along only the user's *reactions* to it, in words.
 - **The prototyper writes a design direction first, then builds** from that direction, the selected concept's journey, and the must list.
-- **The critic reviews the prototype by screenshot** using the `design-review` rubric. Allow at most 2 review→fix rounds.
+- **The critic reviews the prototype by screenshot** using the `discovery-protocol-v3:design-review` rubric. Allow at most 2 review→fix rounds.
 - **Musts are capped (default 12) and are not all on screen.** Each must needs a coverage row in the notes. A hook blocks requirement IDs and protocol words in the prototype.
 
 ## 3. Spend
@@ -47,7 +47,7 @@ The prototype is the deliverable. Before this version, its only design input was
 | Prototype | prototyper → critic (≤2 rounds) | `prototype/design-direction-v1.md`, `prototype/site/`, `prototype/design-review-vN.md`, `prototype/prototype-notes-v1.md` | **C3**: user reacts |
 | Validation (opt-in) | validator | `validation/validation-kit-v1.md` | **C4** |
 
-Exact filenames and required sections are in the `artifact-templates` skill. Put the exact paths in every brief.
+Exact filenames and required sections are in the `discovery-protocol-v3:artifact-templates` skill. Put the exact paths in every brief.
 
 Hooks gate the stages. A write into a later stage's directory is blocked until STATE has `- Gate <prior>: approved (user: "<their words>", <date>)`. Write that line only after the user approves. The hooks make shortcuts visible, not impossible. Never write an approval the user didn't give.
 
@@ -55,17 +55,18 @@ Hooks gate the stages. A write into a later stage's directory is blocked until S
 
 Every brief includes: the task, input paths with versions, the exact output path, and constraints. Also include this line: *"The run state file is ./STATE.dp3.md. Do not read STATE.dp3.md or any RETRO file. Everything you need is in this brief."* This keeps the critic blind and the specialists focused.
 
-- **Researcher:** the raw user input, verbatim, plus the answers so far.
-- **Explorer:** the approved discovery doc. For sketches, which concepts to sketch.
-- **Critic:** the artifacts and the skill to use. **Never** a selection bar, a target score, or your own preference.
-- **Prototyper:** the selected concept (and section), the approved discovery doc, the full must list (IDs + text), the design reference from STATE, and the user's verbatim reactions from C2. No sketch paths.
+- **Name skills by their full name** (`discovery-protocol-v3:concept-scoring`), never the short name. Other plugins on the machine can have same-named skills, and an older `concept-scoring` carries a passing score that would break blind scoring.
+- **Researcher:** the raw user input, verbatim, plus every answer so far, verbatim. Add a **Settled** list: each question already answered or defaulted, with the answer. The researcher must not ask any of them again.
+- **Explorer:** the approved discovery doc. For sketches, which concepts to sketch, and mock data at the scale in the doc's *Scale & shape* section.
+- **Critic:** the artifacts and the skill to use. For design review, also the approved discovery doc (for scale). **Never** a selection bar, a target score, or your own preference.
+- **Prototyper:** the selected concept (and section), the approved discovery doc (including *Scale & shape*), the full must list (IDs + text), the design reference from STATE, and the user's verbatim reactions from C2. No sketch paths.
 
 ## Checkpoints — short by design
 
 Present, in this order and nothing more:
 1. **What happened**: 2–3 lines.
 2. **What to look at**: the one artifact that matters (path), and for C2/C3 the screenshots (open them with `open <png>`, or link them).
-3. **Questions** (≤5, guess-with-default). End with: *"Reply 'ok' to accept all defaults."*
+3. **Questions** (≤5, guess-with-default). End with: *"Reply 'ok' to accept all defaults."* **You are the last filter:** before presenting, drop any question the user's own words already answer, even implicitly, and record it as settled. A question the user has already answered is the fastest way to lose their trust in the process.
 4. **Approve / Revise / End**
 
 Record answers in STATE (`Open questions`, `Defaults taken`). Have the researcher fold them into the next discovery-doc version at the next natural revision. Don't run a revision only to record answers.
@@ -80,7 +81,7 @@ Maintain the fields that scaffold.sh creates. `Stage`, the four `Gate` lines, `A
 
 ## Retro draft
 
-Append a dated one-liner to `./RETRO-draft.md` whenever something lesson-shaped happens: a refuted guess, a hook block, a user correction, a moment of question fatigue, a prototype the user disliked and why. On any exit, run the `retro` skill. Capture never depends on the exit ceremony.
+Append a dated one-liner to `./RETRO-draft.md` whenever something lesson-shaped happens: a refuted guess, a hook block, a user correction, a moment of question fatigue, a prototype the user disliked and why. On any exit, run the `discovery-protocol-v3:retro` skill. Capture never depends on the exit ceremony.
 
 ## Failure modes
 
@@ -88,4 +89,4 @@ Append a dated one-liner to `./RETRO-draft.md` whenever something lesson-shaped 
 - The user rejects every concept → ask one question about what they expected to see, then re-explore once. Don't propose more abstract reframes.
 - The prototype fails design review twice → present it anyway with the critic's remaining fixes listed. Don't loop.
 
-To begin a run, follow the `start` skill.
+To begin a run, follow the `discovery-protocol-v3:start` skill.

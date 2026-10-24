@@ -18,6 +18,9 @@ mkdir -p \
 
 cp "$ROOT/scripts/shoot.sh" ./.dp3/shoot.sh
 chmod +x ./.dp3/shoot.sh
+# Lets subagents read this plugin's own skill files when a skill won't load,
+# instead of finding a same-named skill from another plugin.
+printf '%s\n' "$ROOT" > ./.dp3/plugin-root
 cp "$ROOT/templates/sketch.css" ./artifacts/concepts/sketches/sketch.css
 
 GLOBAL_DIR="${HOME}/.claude/discovery-protocol-v3"

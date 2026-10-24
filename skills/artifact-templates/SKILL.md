@@ -48,9 +48,9 @@ Header · **Problem as I understand it** (3–5 sentences in your own words) · 
 It should be forwardable to a PM unedited.
 
 ## discovery-vN.md
-Header · **Problem** · **Personas** · **Stakeholders** · **Competitive & adjacent landscape** · **Needs** · **Requirements** · **Success criteria** · **Non-goals** · **Assumption register** · **Questions for you** (≤5) · **Later questions**
+Header · **Problem** · **Personas** · **Stakeholders** · **Competitive & adjacent landscape** · **Scale & shape** · **Needs** · **Requirements** · **Success criteria** · **Non-goals** · **Assumption register** · **Questions for you** (≤5) · **Later questions**
 
-A hook checks that `## Personas`, `## Stakeholders`, `## Competitive & adjacent landscape` exist, and that pain points are named.
+A hook checks that `## Personas`, `## Stakeholders`, `## Competitive & adjacent landscape` and `## Scale & shape` exist, and that pain points are named.
 
 **Personas**: write 1–3, as many as there are genuinely distinct user types. Secondary personas can be shorter. For each:
 ```
@@ -69,6 +69,15 @@ Naming today's tools and UI is fine here. This is how things work now, not a pro
 ```
 
 **Competitive & adjacent landscape**: existing products, features already in the host product, open-source tools, and the workarounds people use today. For each: what it does well, where it falls short for these personas, and a source (`retrieved: <url>`). End with **The gap**: one or two sentences on what nothing covers today.
+
+**Scale & shape**: how much there is and how it's structured. The prototype's mock data is built to these numbers.
+```
+- <thing>: typical <n>, range <min–max> (A-ID)        e.g. foundations per comparison: typical 5, up to 10
+- Hierarchy: <level> › <level> › <level>; ~<n> per level   e.g. tile › 7–9 categories › sections › ~10 settings
+- Extremes worth designing for: <the largest / deepest / most varied case>
+- Change rate: <how often it changes, if it matters>
+```
+Tag each figure. A flattened or toy-sized model here becomes a prototype that hides the hardest design problem.
 
 **Needs**: prioritised. Each need names the persona and pain point it comes from, plus its A-IDs.
 
@@ -111,7 +120,7 @@ Header · Score table · Forced ranking (no ties) · Kill + Bet · Per-concept n
 Greyscale, linking `../sketch.css` only. Primary-journey steps as hash routes with a `.steps` strip. Small `SKETCH — <concept>` banner. `.note` annotations allowed. No other styling beyond layout.
 
 ## design-direction-vN.md (prototyper)
-Header · **Design reference & stance** (what we match, and how closely) · **The 5-second read** (what the first screen must make obvious) · **Route map** (`#/route` → purpose; primary journey marked) · **Hierarchy per screen** (primary / secondary / on demand) · **Visual system** (type scale, colour tokens with semantic roles, spacing scale, density, radius, iconography) · **Components** · **Data & copy** (mock-data shape and volume; voice) · **Where the other musts live** (musts not on primary screens → their route)
+Header · **Design reference & stance** (what we match, and how closely) · **The 5-second read** (what the first screen must make obvious) · **Route map** (`#/route` → purpose; primary journey marked) · **Hierarchy per screen** (primary / secondary / on demand) · **Visual system** (type scale, colour tokens with semantic roles, spacing scale, density, radius, iconography) · **Components** · **Data & copy** (mock-data volume and hierarchy, matching the discovery doc's *Scale & shape*; how long lists stay legible; voice) · **Where the other musts live** (musts not on primary screens → their route)
 
 ## design-review-vN.md (critic)
 Header · Screens reviewed (route → png path) · Score table (design-review rubric) · Journey walk (step → route → what you saw) · Must visibility (R-ID → claimed route → seen? yes/no) · **Top fixes (≤5)**: screen, problem, concrete change · Verdict: `ready` / `one more round`
@@ -133,4 +142,4 @@ Every `[must]` from the approved discovery doc has a row. `shown` and `partial` 
 Header · Assumptions to test (question · who answers · confirms vs refutes · consequence) · Task scenarios (task · `#route` · observable pass/fail, stated beforehand; ≥1 designed to fail informatively) · Session guide · Results template (blank tables). No simulated content.
 
 ## Briefs
-Exempt from the header. See the `brief` skill.
+Exempt from the header. See the `discovery-protocol-v3:brief` skill.

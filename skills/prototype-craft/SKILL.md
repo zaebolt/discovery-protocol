@@ -19,11 +19,13 @@ The prototype answers one question for a PM, an engineer, or a user: *what would
 - **Build from the journey, not the requirement list.** Lay out the primary journey's screens first. Then place the remaining musts where a user would look for them, which is often a click away: a detail panel, a secondary tab, a row action, a settings view.
 - **One primary focus per screen.** Create hierarchy with size, weight, and space before you reach for borders, boxes, and colour.
 - **Avoid the default admin-panel look.** Don't box everything, don't stack full-width tables, don't use yellow warning banners as layout, and don't fill the page with badges. Earlier runs produced exactly this.
+- **Make group boundaries obvious in long content.** Give every group in a long list or table a visible start and end: a group header with its count, space or a rule between groups, and column headers repeated per group or kept sticky. A reader halfway down must know which group they're in. One long undivided grid is the most common failure at real scale.
+- **Check below the fold.** `shoot.sh` writes a `.full.png` next to each viewport shot. Review it as carefully as the first screen.
 - **Sketches are not a reference.** Don't open them. Their look was meant to be thrown away.
 
 ## Content
 
-- **Realistic mock data** shaped like the real domain, with real-sounding names, versions, and counts. Use enough volume to show the density problem the product solves, and seed the interesting cases: differences, outliers, failures, empty results.
+- **Mock data at real scale.** Build it to the discovery doc's *Scale & shape*: the stated counts, the full hierarchy depth, and at least one extreme case. If a real item has 100 settings in 9 categories with sections, model 100 in 9 with sections, not 20 in a flat list. Use real-sounding names, versions and values, and seed the interesting cases: differences, outliers, failures, empty results. Generate volume in code from realistic patterns rather than hand-typing a few rows.
 - **Product copy only.** Use short labels and helpful empty states. Don't explain design choices on screen ("by design…", "this is not a severity…"). Never show requirement or assumption IDs, `[must]`, "provisional", or "PRD". A hook blocks these.
 - At most one small, unobtrusive "Prototype" badge. No mock-data banners repeated across screens.
 

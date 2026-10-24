@@ -91,9 +91,10 @@ dp3_check_discovery_sections() {
   grep -qiE '^## +personas?' "$1" || missing="$missing '## Personas'"
   grep -qiE '^## +stakeholders?' "$1" || missing="$missing '## Stakeholders'"
   grep -qiE '^## +(competitive|landscape|alternatives)' "$1" || missing="$missing '## Competitive & adjacent landscape'"
+  grep -qiE '^## +scale' "$1" || missing="$missing '## Scale & shape'"
   grep -qiE 'pain points?' "$1" || missing="$missing 'Pain points (per persona)'"
   if [ -n "$missing" ]; then
-    echo "discovery doc is missing required research section(s):$missing. Personas need context, goals, pain points, jobs to be done and a current journey; stakeholders need interests and success criteria; the landscape needs sourced alternatives and the gap. Tag inferred content as inferred — see the artifact-templates skill."
+    echo "discovery doc is missing required research section(s):$missing. Personas need context, goals, pain points, jobs to be done and a current journey; stakeholders need interests and success criteria; the landscape needs sourced alternatives and the gap; scale & shape needs counts, hierarchy depth and extremes. Tag inferred content as inferred — see the artifact-templates skill."
     return 1
   fi
   return 0
