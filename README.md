@@ -56,7 +56,7 @@ Tested on macOS. Linux should work. Windows is untested.
 In an empty folder for your project:
 
 ```
-/discovery-protocol-v3:start Platform engineers need to compare configuration across environments
+/discovery-protocol-v3:start Account managers can't see where each new customer is stuck during onboarding
 ```
 
 The plugin creates its files in that folder and asks for three things:
