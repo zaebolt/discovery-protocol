@@ -15,7 +15,7 @@ This is the successor to **[design-centered-workflow](https://github.com/zaebolt
 | **Packaging** | Prompt files in a cloned repo | Installable plugin: agents, skills, hooks |
 | **Roles** | One conversation plays each role in turn | Separate agents; the critic reviews in its own context |
 | **Starting point** | Generates a full PRD, personas, journeys and stakeholder map from the idea | A framing checkpoint first: restates the problem and asks at most 5 questions, each with a default |
-| **Discovery output** | PRD, personas, journeys, JTBD, needs, stakeholders (several docs) | One discovery doc; every claim tagged *stated*, *retrieved*, *inferred* or *default* |
+| **Discovery output** | PRD, personas, journeys, JTBD, needs, stakeholders, landscape (several docs) | The same coverage (personas with pain points, JTBD and current journey; stakeholders; sourced competitive landscape; needs; requirements) in **one document**, with every claim tagged *stated*, *retrieved*, *inferred* or *default* |
 | **Picking a concept** | Iterate until ≥3 concepts score ≥7.5 | Critic scores blind, force-ranks, and names a kill and a bet; the top 2 get clickable wireframe sketches |
 | **Prototype** | Next.js + Tailwind app (`npm install && npm run dev`) | Static HTML that opens from disk, built from a design direction and your design system or host product |
 | **Prototype review** | You review the running app | Critic screenshots every screen and reviews it against a design rubric (up to 2 fix rounds) before you see it |
@@ -91,7 +91,8 @@ your-project/
 ├── STATE.dp3.md                  run state (the plugin's hooks wake up only when this exists)
 ├── RETRO-draft.md                lessons captured during the run
 └── artifacts/
-    ├── discovery/   framing-v1.md · discovery-v1.md · discovery-review-v1.md
+    ├── discovery/   framing-v1.md · discovery-v1.md (personas, stakeholders, landscape,
+    │                needs, requirements) · discovery-review-v1.md
     ├── concepts/    concepts-v1.md · concept-scores-v1.md · sketches/<concept>/index.html
     ├── prototype/   design-direction-v1.md · site/index.html · screens/*.png
     │                design-review-v1.md · prototype-notes-v1.md
@@ -109,7 +110,7 @@ Hooks enforce a few rules; the agents use judgment for everything else. The hook
 |---|---|
 | Stages happen in order; a later stage needs your recorded approval of the one before | Before any write into `artifacts/` |
 | At most 5 questions per checkpoint, each with *If unanswered* and *Changes* | After writing the framing or discovery doc |
-| At most 12 must-have requirements | After writing the discovery doc |
+| At most 12 must-have requirements; personas (with pain points), stakeholders and competitive landscape all present | After writing the discovery doc |
 | Every must-have has a coverage row naming the screen (`#route`) where it lives | After writing the prototype notes |
 | No requirement IDs, `[must]`, "PRD" or other protocol words in the prototype's visible text | After writing any prototype HTML/JS |
 

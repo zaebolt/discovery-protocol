@@ -82,6 +82,23 @@ dp3_check_must_cap() {
   return 0
 }
 
+# ---------- research sections (discovery doc) ----------
+# One doc, but not a thin one: personas (with pain points), stakeholders and
+# the competitive/adjacent landscape must be present (0.1.0's thin template let
+# a real run ship discovery without any of them).
+dp3_check_discovery_sections() {
+  local missing=""
+  grep -qiE '^## +personas?' "$1" || missing="$missing '## Personas'"
+  grep -qiE '^## +stakeholders?' "$1" || missing="$missing '## Stakeholders'"
+  grep -qiE '^## +(competitive|landscape|alternatives)' "$1" || missing="$missing '## Competitive & adjacent landscape'"
+  grep -qiE 'pain points?' "$1" || missing="$missing 'Pain points (per persona)'"
+  if [ -n "$missing" ]; then
+    echo "discovery doc is missing required research section(s):$missing. Personas need context, goals, pain points, jobs to be done and a current journey; stakeholders need interests and success criteria; the landscape needs sourced alternatives and the gap. Tag inferred content as inferred — see the artifact-templates skill."
+    return 1
+  fi
+  return 0
+}
+
 # ---------- requirement coverage (prototype notes) ----------
 # Every [must] in the approved discovery doc needs a coverage row:
 #   | R3 | must | shown | #/compare | ... |

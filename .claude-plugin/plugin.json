@@ -1,7 +1,7 @@
 {
   "name": "discovery-protocol-v3",
   "description": "Design-centered product discovery as an agent team: thin idea → framing (≤5 questions with defaults) → one discovery doc → concepts with wireframe sketches → a designed, clickable HTML prototype reviewed by screenshot. Hooks enforce stage gates, the question budget, requirement coverage, and keep requirement text off the prototype. Dormant until /discovery-protocol-v3:start.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Yoana Georgieva",
     "url": "https://github.com/zaebolt"
@@ -9,5 +9,12 @@
   "homepage": "https://github.com/zaebolt/discovery-protocol",
   "repository": "https://github.com/zaebolt/discovery-protocol",
   "license": "MIT",
-  "keywords": ["product-discovery", "design", "prototyping", "ux", "requirements", "agents"]
+  "keywords": [
+    "product-discovery",
+    "design",
+    "prototyping",
+    "ux",
+    "requirements",
+    "agents"
+  ]
 }

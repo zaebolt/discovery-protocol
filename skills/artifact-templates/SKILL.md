@@ -48,7 +48,31 @@ Header · **Problem as I understand it** (3–5 sentences in your own words) · 
 It should be forwardable to a PM unedited.
 
 ## discovery-vN.md
-Header · **Problem** · **Users & context** (who, situation, jobs; a few lines per user type) · **Current state** (how it's done today; naming tools and UI is fine here) · **Needs** (prioritised, citing A-IDs) · **Requirements** · **Success criteria** · **Non-goals** · **Assumption register** · **Questions for you** (≤5) · **Later questions**
+Header · **Problem** · **Personas** · **Stakeholders** · **Competitive & adjacent landscape** · **Needs** · **Requirements** · **Success criteria** · **Non-goals** · **Assumption register** · **Questions for you** (≤5) · **Later questions**
+
+A hook checks that `## Personas`, `## Stakeholders`, `## Competitive & adjacent landscape` exist, and that pain points are named.
+
+**Personas**: write 1–3, as many as there are genuinely distinct user types. Secondary personas can be shorter. For each:
+```
+### <Name> — <role>
+- Context: <environment, scale, tools they use today, how often they face this>
+- Goals: <what they are trying to achieve>
+- Pain points: <specific frictions today, each tagged (A-ID)>
+- Jobs to be done: "When <situation>, I want to <motivation>, so I can <outcome>."
+- Current journey: 1. <step> → 2. <step> (⚠ where it hurts) → … → <outcome>
+```
+Naming today's tools and UI is fine here. This is how things work now, not a proposal.
+
+**Stakeholders**: everyone affected by the product or with a say in it beyond the personas: approvers, adjacent teams, compliance/security, support, buyers.
+```
+| Stakeholder | Interest / concern | What success means to them | Influence | Basis |
+```
+
+**Competitive & adjacent landscape**: existing products, features already in the host product, open-source tools, and the workarounds people use today. For each: what it does well, where it falls short for these personas, and a source (`retrieved: <url>`). End with **The gap**: one or two sentences on what nothing covers today.
+
+**Needs**: prioritised. Each need names the persona and pain point it comes from, plus its A-IDs.
+
+**Provenance applies to all of it.** From thin input, most persona and stakeholder detail is inferred. Tag it honestly, prefer fewer well-grounded personas over many invented ones, and never present inferred pain points as research. Persona uncertainties go to *Later questions* unless the answer would change the primary journey.
 
 ```
 - R1 [must]: <user-facing capability> (basis: A1, A4)
@@ -71,6 +95,7 @@ Header · then per concept:
 ```
 ## Concept 2 — <Name>
 - The bet: <one sentence>
+- For: <persona> — relieves: <their pain points>
 - Puts first / gives up: <…> / <…>
 - Primary journey: 1. <entry> → 2. … → 6. <outcome>
 - Screens: <names>

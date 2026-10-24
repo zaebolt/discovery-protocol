@@ -31,6 +31,7 @@ case "$rel" in
   artifacts/discovery/discovery-v*.md)
     msg="$(dp3_check_questions "$rel")" || fail "$msg"
     msg="$(dp3_check_must_cap "$rel")" || fail "$msg"
+    msg="$(dp3_check_discovery_sections "$rel")" || fail "$msg"
     ;;
   artifacts/prototype/prototype-notes-v*.md)
     msg="$(dp3_check_coverage "$rel")" || fail "$msg"
